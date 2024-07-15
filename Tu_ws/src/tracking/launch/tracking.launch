@@ -1,0 +1,28 @@
+<launch>
+    <!-- Define arguments -->
+    <arg name="controller" default="true"/>
+    <arg name="imu" default="false"/>
+    <arg name="calib_imu" default="false"/>
+    <arg name="gps" default="false"/>
+
+    <!-- Start controller node if the argument is true -->
+    <group if="$(arg controller)">
+        <node name="Controller_node" pkg="tracking" type="controller_node" output="screen"/>
+    </group>
+
+    <!-- Start IMU node if the argument is true -->
+    <group if="$(arg imu)">
+        <node name="IMU_node" pkg="tracking" type="IMU_node"/>
+    </group>
+    <!-- Start controller node if the argument is true -->
+    <group if="$(arg gps)">
+        <node name="GPS_node" pkg="tracking" type="GPS_node"/>
+    </group>
+
+    <!-- Start IMU node if the argument is true -->
+    <group if="$(arg calib_imu)">
+        <node name="IMU_calib_node" pkg="calib_imu" type="IMU_calib_node" output="screen"/>
+    </group>
+
+</launch>
+
