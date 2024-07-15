@@ -1,0 +1,8 @@
+prefix=/home/tu/GUI_ws/devel
+
+Name: gui_car
+Description: Description of gui_car
+Version: 0.1.0
+Cflags: -I/home/tu/GUI_ws/src/gui_car/include
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs ugv_msgs

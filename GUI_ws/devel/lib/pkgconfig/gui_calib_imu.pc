@@ -1,0 +1,8 @@
+prefix=/home/tu/GUI_ws/devel
+
+Name: gui_calib_imu
+Description: Description of gui_calib_imu
+Version: 0.1.0
+Cflags: -I/home/tu/GUI_ws/src/gui_calib_imu/include
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs ugv_msgs
