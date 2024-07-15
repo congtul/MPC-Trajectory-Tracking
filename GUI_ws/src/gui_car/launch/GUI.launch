@@ -1,0 +1,17 @@
+<launch>
+    <!-- Define arguments -->
+    <arg name="gui_car" default="true"/>
+    <arg name="gui_calib_imu" default="false"/>
+
+    <!-- Start controller node if the argument is true -->
+    <group if="$(arg gui_car)">
+        <node name="qnode" pkg="gui_car" type="gui_car" output="screen"/>
+    </group>
+
+    <!-- Start IMU node if the argument is true -->
+    <group if="$(arg gui_calib_imu)">
+        <node name="GUI_IMU_calib" pkg="gui_calib_imu" type="gui_calib_imu" output="screen"/>
+    </group>
+
+</launch>
+

@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/markers/marker.png</file>
+        <file>images/markers/marker2.png</file>
+        <file>maps/pool.osm</file>
+        <file>qml/map.qml</file>
+        <file>qml/Compass.qml</file>
+        <file>images/markers/target.svg</file>
+        <file>images/markers/target.png</file>
+        <file>images/markers/compassInstrumentDial.svg</file>
+    </qresource>
+</RCC>
