@@ -1,0 +1,8 @@
+prefix=/home/jetson/Tu_ws/devel
+
+Name: calib_imu
+Description: Description of calib_imu
+Version: 0.0.0
+Cflags: -I/home/jetson/Tu_ws/src/calib_imu/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy serial std_msgs ugv_msgs

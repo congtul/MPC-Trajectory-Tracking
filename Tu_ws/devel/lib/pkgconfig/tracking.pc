@@ -1,0 +1,8 @@
+prefix=/home/jetson/Tu_ws/devel
+
+Name: tracking
+Description: Description of tracking
+Version: 0.0.0
+Cflags: -I/home/jetson/Tu_ws/src/tracking/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy sensor_msgs serial std_msgs ugv_msgs
